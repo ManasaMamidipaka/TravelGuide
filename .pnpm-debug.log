@@ -1,0 +1,5276 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "app-name",
+      "private": true,
+      "version": "1.0.0",
+      "engines": {
+        "node": "^10.13 || 12 || 14 || 15",
+        "npm": ">=6"
+      },
+      "dependencies": {
+        "@craco/craco": "6.1.1",
+        "@testing-library/jest-dom": "5.11.9",
+        "@testing-library/react": "11.2.5",
+        "@testing-library/user-event": "12.6.2",
+        "chalk": "4.1.0",
+        "msw": "0.35.0",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-loader-spinner": "4.0.0",
+        "styled-components": "5.3.0"
+      },
+      "devDependencies": {
+        "babel-plugin-styled-components": "1.13.2",
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "8.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "lint-staged": "10.5.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.2.1",
+        "react-scripts": "4.0.3"
+      },
+      "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix src/",
+        "format": "prettier --write \"./src\"",
+        "run-all": "npm-run-all --parallel test lint:fix"
+      },
+      "lint-staged": {
+        "*.js": [
+          "npm run lint:fix"
+        ],
+        "*.{js, jsx, json, html, css}": [
+          "npm run format"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "jest": {
+        "collectCoverageFrom": [
+          "src/**/*.js"
+        ]
+      },
+      "browserslist": {
+        "development": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 edge versions"
+        ],
+        "production": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 11"
+        ]
+      }
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/travelGuide"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/workspace/.pnpm-store/v3",
+    "virtualStoreDir": "/home/workspace/reactjs/coding-practices/travelGuide/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-styled-components/1.13.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-plugin-styled-components",
+      "rawSpec": "1.13.2"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-styled-components/1.13.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "3.3.1"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-airbnb",
+      "rawSpec": "18.2.1"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "2.2.1"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/10.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "10.5.4"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "11.2.5"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-all/4.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "npm-run-all",
+      "rawSpec": "4.1.5"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/husky/4.3.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "4.3.8"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@craco/craco/6.1.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@craco/craco",
+      "rawSpec": "6.1.1"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@craco/craco/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "chalk",
+      "rawSpec": "4.1.0"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "12.6.2"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "5.11.9"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "32 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "34 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/styled-components/5.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "styled-components",
+      "rawSpec": "5.3.0"
+    }
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/styled-components/5.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "36 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-styled-components/1.13.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@craco/craco/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/styled-components/5.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "55 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-loader-spinner/4.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-loader-spinner",
+      "rawSpec": "4.0.0"
+    }
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-loader-spinner/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-loader-spinner/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/msw/0.35.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "msw",
+      "rawSpec": "0.35.0"
+    }
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/msw/0.35.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/msw/0.35.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-module-imports/7.22.5",
+    "wanted": {
+      "dependentId": "/babel-plugin-styled-components/1.13.2",
+      "name": "@babel/helper-module-imports",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-module-imports/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-module-imports/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-annotate-as-pure/7.22.5",
+    "wanted": {
+      "dependentId": "/babel-plugin-styled-components/1.13.2",
+      "name": "@babel/helper-annotate-as-pure",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-annotate-as-pure/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-annotate-as-pure/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-syntax-jsx/6.18.0",
+    "wanted": {
+      "dependentId": "/babel-plugin-styled-components/1.13.2",
+      "name": "babel-plugin-syntax-jsx",
+      "rawSpec": "^6.18.0"
+    }
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-syntax-jsx/6.18.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-syntax-jsx/6.18.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/log-symbols/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "log-symbols",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-symbols/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "73 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-truncate/2.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cli-truncate",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "wanted": {
+      "dependentId": "/eslint-plugin-prettier/3.3.1",
+      "name": "prettier-linter-helpers",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "78 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-argv/0.3.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "string-argv",
+      "rawSpec": "0.3.1"
+    }
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "82 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dedent/0.7.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "dedent",
+      "rawSpec": "^0.7.0"
+    }
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dedent/0.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dedent/0.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "85 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "86 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "normalize-path",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "88 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "89 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "91 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/2.4.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "chalk",
+      "rawSpec": "^2.4.1"
+    }
+  },
+  "92 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "94 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "95 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "96 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "98 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "99 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "100 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "101 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/memorystream/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "memorystream",
+      "rawSpec": "^0.3.1"
+    }
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "103 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "104 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/babel-plugin-styled-components/1.13.2",
+      "name": "lodash",
+      "rawSpec": "^4.17.11"
+    }
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "106 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "107 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/stringify-object/3.3.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "stringify-object",
+      "rawSpec": "^3.3.0"
+    }
+  },
+  "108 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/stringify-object/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/stringify-object/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "110 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/commander/6.2.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "commander",
+      "rawSpec": "^6.2.0"
+    }
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/commander/6.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "112 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/commander/6.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "113 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "debug",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "114 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "115 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "chalk",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pidtree/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "pidtree",
+      "rawSpec": "^0.3.0"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.assign/4.1.4",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.assign",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "121 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "122 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "123 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "124 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/execa/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "execa",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "125 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/execa/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/enquirer/2.3.6",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "enquirer",
+      "rawSpec": "^2.3.6"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.3.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "129 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.3.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "130 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/read-pkg/3.0.0",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "read-pkg",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "131 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "132 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "133 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "134 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "string.prototype.padend",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "136 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "137 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "which-pm-runs",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "138 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "139 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "140 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "eslint-config-airbnb-base",
+      "rawSpec": "^14.2.1"
+    }
+  },
+  "141 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "142 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.12.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@babel/core",
+      "rawSpec": "7.12.3"
+    }
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "144 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "145 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@pmmmwh/react-refresh-webpack-plugin",
+      "rawSpec": "0.4.3"
+    }
+  },
+  "146 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "147 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@svgr/webpack",
+      "rawSpec": "5.5.0"
+    }
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "149 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "151 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "152 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "opencollective-postinstall",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "153 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "154 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "155 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "wanted": {
+      "dependentId": "/@testing-library/react/11.2.5",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "156 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "157 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "158 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/micromatch/4.0.5",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "micromatch",
+      "rawSpec": "^4.0.2"
+    }
+  },
+  "159 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "160 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "161 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shell-quote/1.8.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "shell-quote",
+      "rawSpec": "^1.6.1"
+    }
+  },
+  "162 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shell-quote/1.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "163 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-loader/8.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-loader",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "164 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "165 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shell-quote/1.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "166 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-loader/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "167 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pkg-dir/5.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "pkg-dir",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "168 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "169 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "170 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.1.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "171 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "172 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "173 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/find-versions/4.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "find-versions",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "174 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "175 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "176 warn pnpm:install-check": {
+    "message": "Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"linux\",\"cpu\":\"x64\"})",
+    "prefix": "/home/workspace/reactjs/coding-practices/travelGuide"
+  },
+  "177 debug pnpm:skipped-optional-dependency": {
+    "details": "Error: Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"linux\",\"cpu\":\"x64\"})",
+    "package": {
+      "id": "registry.npmjs.org/fsevents/2.3.2",
+      "name": "fsevents",
+      "version": "2.3.2"
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "reason": "unsupported_platform"
+  },
+  "178 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "fsevents",
+      "rawSpec": "^2.1.3"
+    }
+  },
+  "179 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "180 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "case-sensitive-paths-webpack-plugin",
+      "rawSpec": "2.3.0"
+    }
+  },
+  "181 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "182 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/case-sensitive-paths-webpack-plugin/2.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "183 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css-loader/4.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "css-loader",
+      "rawSpec": "4.3.0"
+    }
+  },
+  "184 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-loader/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "185 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dotenv/8.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "dotenv",
+      "rawSpec": "8.2.0"
+    }
+  },
+  "186 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv/8.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "187 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-loader/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "188 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "dotenv-expand",
+      "rawSpec": "5.1.0"
+    }
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "190 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv/8.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "191 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dotenv-expand/5.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "192 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bfj/7.0.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "bfj",
+      "rawSpec": "^7.0.2"
+    }
+  },
+  "193 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bfj/7.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "194 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bfj/7.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "195 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/camelcase/6.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "camelcase",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "196 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/6.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "197 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/6.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "198 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/6.0.5",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "cross-spawn",
+      "rawSpec": "^6.0.5"
+    }
+  },
+  "199 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "201 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slash/3.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "slash",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "202 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "203 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "204 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.entries/1.1.6",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.entries",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "205 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "206 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ci-info/2.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "ci-info",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "207 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "208 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "209 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "210 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/listr2/3.14.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "listr2",
+      "rawSpec": "^3.2.2"
+    }
+  },
+  "211 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/listr2/3.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "212 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/listr2/3.14.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "213 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-plugin-named-asset-import",
+      "rawSpec": "^0.3.7"
+    }
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "215 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-named-asset-import/0.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "216 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-eslint/10.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-eslint",
+      "rawSpec": "^10.1.0"
+    }
+  },
+  "217 debug pnpm:deprecation": {
+    "deprecated": "babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.",
+    "depth": 1,
+    "pkgId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "pkgName": "babel-eslint",
+    "pkgVersion": "10.1.0",
+    "prefix": "/home/workspace/reactjs/coding-practices/travelGuide"
+  },
+  "218 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "219 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-eslint/10.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "220 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/compare-versions/3.6.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "compare-versions",
+      "rawSpec": "^3.6.0"
+    }
+  },
+  "221 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "222 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/file-loader/6.1.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "file-loader",
+      "rawSpec": "6.1.1"
+    }
+  },
+  "223 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-loader/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "224 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "225 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-loader/6.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "226 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-config-react-app",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "227 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "228 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "html-webpack-plugin",
+      "rawSpec": "4.5.0"
+    }
+  },
+  "229 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "230 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-react-app/6.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "231 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "identity-obj-proxy",
+      "rawSpec": "3.0.0"
+    }
+  },
+  "232 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "233 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/html-webpack-plugin/4.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "234 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "235 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "236 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/identity-obj-proxy/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "237 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-circus/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-circus",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "238 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-circus/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "239 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "240 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-resolve/26.6.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-resolve",
+      "rawSpec": "26.6.0"
+    }
+  },
+  "241 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-resolve/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "242 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-circus/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "243 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "jest-watch-typeahead",
+      "rawSpec": "0.6.1"
+    }
+  },
+  "244 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "245 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-resolve/26.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "246 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "mini-css-extract-plugin",
+      "rawSpec": "0.11.3"
+    }
+  },
+  "247 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "248 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-watch-typeahead/0.6.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "249 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "optimize-css-assets-webpack-plugin",
+      "rawSpec": "5.0.4"
+    }
+  },
+  "250 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "251 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mini-css-extract-plugin/0.11.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "252 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "pnp-webpack-plugin",
+      "rawSpec": "1.6.4"
+    }
+  },
+  "253 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "254 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optimize-css-assets-webpack-plugin/5.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "255 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-flexbugs-fixes",
+      "rawSpec": "4.2.1"
+    }
+  },
+  "256 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "257 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pnp-webpack-plugin/1.6.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "258 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-loader/3.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-loader",
+      "rawSpec": "3.0.0"
+    }
+  },
+  "259 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-loader/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "260 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-flexbugs-fixes/4.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "261 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-normalize",
+      "rawSpec": "8.0.1"
+    }
+  },
+  "262 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "263 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-loader/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "264 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-preset-env",
+      "rawSpec": "6.7.0"
+    }
+  },
+  "265 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "266 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-normalize/8.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "267 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "postcss-safe-parser",
+      "rawSpec": "5.0.2"
+    }
+  },
+  "268 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "269 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-preset-env/6.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "270 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prompts/2.4.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "prompts",
+      "rawSpec": "2.4.0"
+    }
+  },
+  "271 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-safe-parser/5.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "273 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prompts/2.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "274 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-preset-react-app",
+      "rawSpec": "^10.0.0"
+    }
+  },
+  "275 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "276 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-preset-react-app/10.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "277 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-webpack-plugin",
+      "rawSpec": "^2.5.2"
+    }
+  },
+  "278 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "279 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-webpack-plugin/2.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "280 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.7.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-jsx-a11y",
+      "rawSpec": "^6.3.1"
+    }
+  },
+  "281 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.7.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "282 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve/1.18.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "resolve",
+      "rawSpec": "1.18.1"
+    }
+  },
+  "283 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.18.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "284 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jsx-a11y/6.7.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "285 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.18.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "286 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-import/2.27.5",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-import",
+      "rawSpec": "^2.22.1"
+    }
+  },
+  "287 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-import/2.27.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "288 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-import/2.27.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "289 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "wanted": {
+      "dependentId": "/@testing-library/react/11.2.5",
+      "name": "@testing-library/dom",
+      "rawSpec": "^7.28.1"
+    }
+  },
+  "290 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "291 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/7.3.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "semver",
+      "rawSpec": "7.3.2"
+    }
+  },
+  "292 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "293 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/style-loader/1.3.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "style-loader",
+      "rawSpec": "1.3.0"
+    }
+  },
+  "294 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/style-loader/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "295 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "296 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "terser-webpack-plugin",
+      "rawSpec": "4.2.3"
+    }
+  },
+  "297 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "298 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/style-loader/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "299 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "300 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ts-pnp/1.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "ts-pnp",
+      "rawSpec": "1.2.0"
+    }
+  },
+  "301 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-pnp/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "302 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/terser-webpack-plugin/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "303 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/url-loader/4.1.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "url-loader",
+      "rawSpec": "4.1.1"
+    }
+  },
+  "304 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/url-loader/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "305 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-pnp/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "306 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/url-loader/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "307 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack/4.44.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack",
+      "rawSpec": "4.44.2"
+    }
+  },
+  "308 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack/4.44.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "309 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack-dev-server",
+      "rawSpec": "3.11.1"
+    }
+  },
+  "310 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "311 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "webpack-manifest-plugin",
+      "rawSpec": "2.2.0"
+    }
+  },
+  "312 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "313 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "workbox-webpack-plugin",
+      "rawSpec": "5.1.4"
+    }
+  },
+  "314 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "315 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/7.0.3",
+    "wanted": {
+      "dependentId": "/@craco/craco/6.1.1",
+      "name": "cross-spawn",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "316 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "317 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/@craco/craco/6.1.1",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "318 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack/4.44.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "319 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-dev-server/3.11.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-manifest-plugin/2.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "321 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/workbox-webpack-plugin/5.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "322 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "323 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-jest/26.6.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "babel-jest",
+      "rawSpec": "^26.6.0"
+    }
+  },
+  "324 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-jest/26.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "325 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-jest/26.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "326 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "resolve-url-loader",
+      "rawSpec": "^3.1.2"
+    }
+  },
+  "327 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "328 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "329 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "330 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-url-loader/3.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "331 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "332 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-flowtype",
+      "rawSpec": "^5.2.0"
+    }
+  },
+  "333 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "334 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "wanted": {
+      "dependentId": "/@testing-library/user-event/12.6.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "335 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.9.2"
+    }
+  },
+  "336 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "react-app-polyfill",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "337 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "338 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-flowtype/5.10.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "339 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-app-polyfill/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "340 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/7.5.3",
+    "wanted": {
+      "dependentId": "/@craco/craco/6.1.1",
+      "name": "semver",
+      "rawSpec": "^7.3.2"
+    }
+  },
+  "341 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.5.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "342 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "chalk",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "343 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "344 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "345 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.5.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "346 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@types/testing-library__jest-dom",
+      "rawSpec": "^5.9.1"
+    }
+  },
+  "347 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "348 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "349 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/webpack-merge/4.2.2",
+    "wanted": {
+      "dependentId": "/@craco/craco/6.1.1",
+      "name": "webpack-merge",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "350 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-merge/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "351 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "352 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/webpack-merge/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "353 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "354 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "355 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "356 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "357 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "358 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "359 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "react-dev-utils",
+      "rawSpec": "^11.0.3"
+    }
+  },
+  "360 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "361 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-module-imports/7.22.5",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "@babel/helper-module-imports",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "362 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dev-utils/11.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "363 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/react/17.0.1",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "364 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "365 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "366 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-testing-library",
+      "rawSpec": "^3.9.2"
+    }
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "368 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-testing-library/3.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "369 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fs-extra/9.1.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "fs-extra",
+      "rawSpec": "^9.0.1"
+    }
+  },
+  "370 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/9.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "371 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css.escape/1.5.1",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css.escape",
+      "rawSpec": "^1.5.1"
+    }
+  },
+  "372 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "373 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/9.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "374 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "375 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "376 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "377 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "378 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/react/17.0.1",
+      "name": "loose-envify",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "379 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/loose-envify/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "380 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/loose-envify/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "381 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css-to-react-native/3.2.0",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "css-to-react-native",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "382 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-to-react-native/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "383 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-to-react-native/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "384 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sass-loader/10.4.1",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "sass-loader",
+      "rawSpec": "^10.0.5"
+    }
+  },
+  "385 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass-loader/10.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "386 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/5.5.0",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "supports-color",
+      "rawSpec": "^5.5.0"
+    }
+  },
+  "387 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "388 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/react-dom/17.0.1",
+      "name": "loose-envify",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "389 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/react-dom/17.0.1",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "390 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass-loader/10.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "391 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "392 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@emotion/stylis/0.8.5",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "@emotion/stylis",
+      "rawSpec": "^0.8.4"
+    }
+  },
+  "393 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/stylis/0.8.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "394 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/stylis/0.8.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "395 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@emotion/is-prop-valid/0.8.8",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "@emotion/is-prop-valid",
+      "rawSpec": "^0.8.8"
+    }
+  },
+  "396 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/is-prop-valid/0.8.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "397 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/is-prop-valid/0.8.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "398 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/hoist-non-react-statics/3.3.2",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "hoist-non-react-statics",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "399 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hoist-non-react-statics/3.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "400 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/hoist-non-react-statics/3.3.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "401 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shallowequal/1.1.0",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "shallowequal",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "402 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shallowequal/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "403 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shallowequal/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "404 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@emotion/unitless/0.7.5",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "@emotion/unitless",
+      "rawSpec": "^0.7.4"
+    }
+  },
+  "405 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/unitless/0.7.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "406 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/unitless/0.7.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "407 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@open-draft/until/1.0.3",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@open-draft/until",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "408 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@open-draft/until/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "409 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@open-draft/until/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "410 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prop-types/15.8.1",
+    "wanted": {
+      "dependentId": "/react-loader-spinner/4.0.0",
+      "name": "prop-types",
+      "rawSpec": "^15.7.2"
+    }
+  },
+  "411 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prop-types/15.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "412 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prop-types/15.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "413 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/7.32.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint",
+      "rawSpec": "^7.11.0"
+    }
+  },
+  "414 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "415 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.2",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "chalk",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "416 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "417 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-react/7.32.2",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-react",
+      "rawSpec": "^7.21.5"
+    }
+  },
+  "418 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-react/7.32.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "419 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "420 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "421 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-react/7.32.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "422 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/cookie/0.4.1",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@types/cookie",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "423 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "424 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.4.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "425 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/js-levenshtein/1.1.1",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@types/js-levenshtein",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "426 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/js-levenshtein/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "427 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/js-levenshtein/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "428 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@mswjs/cookies/0.1.7",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@mswjs/cookies",
+      "rawSpec": "^0.1.6"
+    }
+  },
+  "429 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@mswjs/cookies/0.1.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "430 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@mswjs/cookies/0.1.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "431 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cookie/0.4.2",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "cookie",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "433 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "434 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/inquirer/7.3.3",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@types/inquirer",
+      "rawSpec": "^7.3.3"
+    }
+  },
+  "435 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/inquirer/7.3.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "436 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/inquirer/7.3.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "437 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-levenshtein/1.1.6",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "js-levenshtein",
+      "rawSpec": "^1.1.6"
+    }
+  },
+  "438 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-levenshtein/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "439 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-levenshtein/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "440 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-styled-components/1.13.2",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "babel-plugin-styled-components",
+      "rawSpec": ">= 1.12.0"
+    }
+  },
+  "441 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chokidar/3.5.3",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "chokidar",
+      "rawSpec": "^3.4.2"
+    }
+  },
+  "442 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "443 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "444 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/headers-utils/3.0.2",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "headers-utils",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "445 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/headers-utils/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "446 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/headers-utils/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "447 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-node-process/1.2.0",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "is-node-process",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "448 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-node-process/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "449 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-node-process/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "450 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/traverse/7.22.5",
+    "wanted": {
+      "dependentId": "/styled-components/5.3.0",
+      "name": "@babel/traverse",
+      "rawSpec": "^7.4.5"
+    }
+  },
+  "451 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/traverse/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "452 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/traverse/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "453 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/statuses/2.0.1",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "statuses",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "454 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/statuses/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "455 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/statuses/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "456 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/redent/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "redent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "457 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "458 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "459 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-diff/1.3.0",
+    "wanted": {
+      "dependentId": "/prettier-linter-helpers/1.0.0",
+      "name": "fast-diff",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "460 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-diff/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "461 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-diff/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "462 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/node-match-path/0.6.3",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "node-match-path",
+      "rawSpec": "^0.6.3"
+    }
+  },
+  "463 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/node-match-path/0.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "464 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "465 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/node-match-path/0.6.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "466 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "escape-string-regexp",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "467 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "468 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/5.5.0",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "supports-color",
+      "rawSpec": "^5.3.0"
+    }
+  },
+  "469 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "470 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/color-convert/1.9.3",
+    "wanted": {
+      "dependentId": "/ansi-styles/3.2.1",
+      "name": "color-convert",
+      "rawSpec": "^1.9.0"
+    }
+  },
+  "471 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/1.9.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "472 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/1.9.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "473 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/node-fetch/2.6.11",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "node-fetch",
+      "rawSpec": "^2.6.1"
+    }
+  },
+  "474 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/node-fetch/2.6.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "475 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/node-fetch/2.6.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "476 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inquirer/8.2.5",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "inquirer",
+      "rawSpec": "^8.1.1"
+    }
+  },
+  "477 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inquirer/8.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "478 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inquirer/8.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "479 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strict-event-emitter/0.2.8",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "strict-event-emitter",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "480 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strict-event-emitter/0.2.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "481 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strict-event-emitter/0.2.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "482 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/load-json-file/4.0.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "load-json-file",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "483 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/load-json-file/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "484 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/load-json-file/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "485 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-type/3.0.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "path-type",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "486 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "487 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "488 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@mswjs/interceptors/0.12.7",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "@mswjs/interceptors",
+      "rawSpec": "^0.12.6"
+    }
+  },
+  "489 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@mswjs/interceptors/0.12.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "490 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@mswjs/interceptors/0.12.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "491 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.2",
+    "wanted": {
+      "dependentId": "/string.prototype.padend/3.1.4",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "492 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/call-bind/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "493 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "wanted": {
+      "dependentId": "/read-pkg/3.0.0",
+      "name": "normalize-package-data",
+      "rawSpec": "^2.3.2"
+    }
+  },
+  "494 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "495 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/call-bind/1.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "496 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-package-data/2.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "497 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.0",
+    "wanted": {
+      "dependentId": "/string.prototype.padend/3.1.4",
+      "name": "define-properties",
+      "rawSpec": "^1.1.4"
+    }
+  },
+  "498 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/define-properties/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "499 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/5.7.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "semver",
+      "rawSpec": "^5.5.0"
+    }
+  },
+  "500 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/5.7.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "501 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/define-properties/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "502 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/5.7.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "503 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/2.0.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "path-key",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "504 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "505 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "506 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-command/1.2.0",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "shebang-command",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "507 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "508 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.2",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "509 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.0",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "define-properties",
+      "rawSpec": "^1.1.4"
+    }
+  },
+  "510 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/1.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "511 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/brace-expansion/1.1.11",
+    "wanted": {
+      "dependentId": "/minimatch/3.1.2",
+      "name": "brace-expansion",
+      "rawSpec": "^1.1.7"
+    }
+  },
+  "512 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "513 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "514 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/nice-try/1.0.5",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "nice-try",
+      "rawSpec": "^1.0.4"
+    }
+  },
+  "515 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nice-try/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "516 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nice-try/1.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "517 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-symbols/1.0.3",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "has-symbols",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "518 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-symbols/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "519 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.assign/4.1.4",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "object.assign",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "520 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.entries/1.1.6",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "object.entries",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "521 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/call-bind/1.0.2",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.6",
+      "name": "call-bind",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "522 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/define-properties/1.2.0",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.6",
+      "name": "define-properties",
+      "rawSpec": "^1.1.4"
+    }
+  },
+  "523 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-symbols/1.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "524 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which/1.3.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/6.0.5",
+      "name": "which",
+      "rawSpec": "^1.2.9"
+    }
+  },
+  "525 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/1.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "526 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/log-symbols/4.1.0",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "527 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/1.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "528 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "wanted": {
+      "dependentId": "/log-symbols/4.1.0",
+      "name": "is-unicode-supported",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "529 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "530 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-unicode-supported/0.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "531 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-keys/1.1.1",
+    "wanted": {
+      "dependentId": "/object.assign/4.1.4",
+      "name": "object-keys",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "532 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-keys/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "533 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-keys/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "534 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slice-ansi/3.0.0",
+    "wanted": {
+      "dependentId": "/cli-truncate/2.1.0",
+      "name": "slice-ansi",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "535 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "536 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "537 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver-compare/1.0.0",
+    "wanted": {
+      "dependentId": "/please-upgrade-node/3.2.0",
+      "name": "semver-compare",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "538 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-compare/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "539 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-compare/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "540 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/types/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/helper-module-imports/7.22.5",
+      "name": "@babel/types",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "541 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "542 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/types/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/helper-annotate-as-pure/7.22.5",
+      "name": "@babel/types",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "543 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "544 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-fest/1.4.0",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "type-fest",
+      "rawSpec": "^1.2.2"
+    }
+  },
+  "545 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-fest/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "546 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-type/4.0.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "path-type",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "547 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "548 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-fest/1.4.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "549 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "550 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb-base/14.2.1",
+      "name": "confusing-browser-globals",
+      "rawSpec": "^1.0.10"
+    }
+  },
+  "551 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "552 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/confusing-browser-globals/1.0.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "553 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/parse-json/4.0.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "@types/parse-json",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "554 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/parse-json/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "555 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/parse-json/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "556 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/import-fresh/3.3.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "import-fresh",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "557 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "558 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "559 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es-abstract/1.21.2",
+    "wanted": {
+      "dependentId": "/string.prototype.padend/3.1.4",
+      "name": "es-abstract",
+      "rawSpec": "^1.20.4"
+    }
+  },
+  "560 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-abstract/1.21.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "561 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es-abstract/1.21.2",
+    "wanted": {
+      "dependentId": "/object.entries/1.1.6",
+      "name": "es-abstract",
+      "rawSpec": "^1.20.4"
+    }
+  },
+  "562 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/7.0.3",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "cross-spawn",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "563 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.2",
+    "wanted": {
+      "dependentId": "/debug/4.3.4",
+      "name": "ms",
+      "rawSpec": "2.1.2"
+    }
+  },
+  "564 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "565 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es-abstract/1.21.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "566 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "567 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-width/4.2.3",
+    "wanted": {
+      "dependentId": "/cli-truncate/2.1.0",
+      "name": "string-width",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "568 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "569 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "570 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parse-json/5.2.0",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "parse-json",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "571 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "572 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-json/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "573 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-obj/1.0.1",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "is-obj",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "574 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-obj/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "575 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-obj/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "576 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "get-own-enumerable-property-symbols",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "577 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "578 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-own-enumerable-property-symbols/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "579 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-regexp/1.0.0",
+    "wanted": {
+      "dependentId": "/stringify-object/3.3.0",
+      "name": "is-regexp",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "580 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-regexp/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "581 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-regexp/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "582 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-path/4.0.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "npm-run-path",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "583 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "584 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-path/4.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "585 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge-stream/2.0.0",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "merge-stream",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "586 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "587 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-stream/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "588 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yargs/17.7.2",
+    "wanted": {
+      "dependentId": "/msw/0.35.0",
+      "name": "yargs",
+      "rawSpec": "^17.0.1"
+    }
+  },
+  "589 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yargs/17.7.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "590 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-stream/2.0.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "is-stream",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "591 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "592 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yargs/17.7.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "593 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-stream/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "594 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-stream/5.2.0",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "get-stream",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "595 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "596 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-truncate/2.1.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "cli-truncate",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "597 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-stream/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "598 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "eslint-plugin-jest",
+      "rawSpec": "^24.1.0"
+    }
+  },
+  "599 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "600 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-jest/24.7.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "601 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-final-newline/2.0.0",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "strip-final-newline",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "602 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-final-newline/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "603 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-final-newline/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "604 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/onetime/5.1.2",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "onetime",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "605 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "606 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/onetime/5.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "607 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/signal-exit/3.0.7",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "signal-exit",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "608 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "609 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/signal-exit/3.0.7",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "610 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/braces/3.0.2",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "braces",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "611 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "612 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "613 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/p-map/4.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "p-map",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "614 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "615 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "616 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rfdc/1.3.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "rfdc",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "617 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rfdc/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "618 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rfdc/1.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "619 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/colorette/2.0.20",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "colorette",
+      "rawSpec": "^2.0.16"
+    }
+  },
+  "620 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/2.0.20",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "621 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/2.0.20",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "622 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/through/2.3.8",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "through",
+      "rawSpec": "^2.3.8"
+    }
+  },
+  "623 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through/2.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "624 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through/2.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "625 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/log-update/4.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "log-update",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "626 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-update/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "627 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/log-update/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "628 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-colors/4.1.3",
+    "wanted": {
+      "dependentId": "/enquirer/2.3.6",
+      "name": "ansi-colors",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "629 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "630 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "631 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.3",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "632 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.1",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "picomatch",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "633 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "634 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "635 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "636 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "637 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "wrap-ansi",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "638 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "639 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrap-ansi/7.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "640 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/human-signals/1.1.1",
+    "wanted": {
+      "dependentId": "/execa/4.1.0",
+      "name": "human-signals",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "641 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "642 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/human-signals/1.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "643 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/find-up/5.0.0",
+    "wanted": {
+      "dependentId": "/pkg-dir/5.0.0",
+      "name": "find-up",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "644 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-up/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "645 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/3.1.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "path-key",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "646 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "647 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-command/2.0.0",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "shebang-command",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "648 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "649 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which/2.0.2",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "which",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "650 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "651 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver-regex/3.1.4",
+    "wanted": {
+      "dependentId": "/find-versions/4.0.0",
+      "name": "semver-regex",
+      "rawSpec": "^3.1.2"
+    }
+  },
+  "652 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-regex/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "653 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/webpack-merge/4.2.2",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "654 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/color-convert/2.0.1",
+    "wanted": {
+      "dependentId": "/ansi-styles/4.3.0",
+      "name": "color-convert",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "655 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "656 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-up/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "657 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "658 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "659 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "660 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver-regex/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "661 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/color-convert/2.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "662 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/regenerator-runtime/0.13.11",
+    "wanted": {
+      "dependentId": "/@babel/runtime/7.22.5",
+      "name": "regenerator-runtime",
+      "rawSpec": "^0.13.11"
+    }
+  },
+  "663 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regenerator-runtime/0.13.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "664 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regenerator-runtime/0.13.11",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "665 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lz-string/1.5.0",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "lz-string",
+      "rawSpec": "^1.4.4"
+    }
+  },
+  "666 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "667 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/loose-envify/1.4.0",
+    "wanted": {
+      "dependentId": "/prop-types/15.8.1",
+      "name": "loose-envify",
+      "rawSpec": "^1.4.0"
+    }
+  },
+  "668 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/prop-types/15.8.1",
+      "name": "object-assign",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "669 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "670 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@types/aria-query",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "671 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "672 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/aria-query/4.2.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "673 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/4.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/7.2.0",
+      "name": "has-flag",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "674 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "675 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "676 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-tokens/4.0.0",
+    "wanted": {
+      "dependentId": "/loose-envify/1.4.0",
+      "name": "js-tokens",
+      "rawSpec": "^3.0.0 || ^4.0.0"
+    }
+  },
+  "677 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "678 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "679 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/camelize/1.0.1",
+    "wanted": {
+      "dependentId": "/css-to-react-native/3.2.0",
+      "name": "camelize",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "680 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelize/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "681 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/3.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/5.5.0",
+      "name": "has-flag",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "682 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "683 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@emotion/memoize/0.7.4",
+    "wanted": {
+      "dependentId": "/@emotion/is-prop-valid/0.8.8",
+      "name": "@emotion/memoize",
+      "rawSpec": "0.7.4"
+    }
+  },
+  "684 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/memoize/0.7.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "685 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "686 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelize/1.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "687 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@emotion/memoize/0.7.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "688 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/code-frame/7.22.5",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "@babel/code-frame",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "689 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "690 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/code-frame/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/code-frame",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "691 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "692 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css-color-keywords/1.0.0",
+    "wanted": {
+      "dependentId": "/css-to-react-native/3.2.0",
+      "name": "css-color-keywords",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "693 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-color-keywords/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "694 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css-color-keywords/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "695 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss-value-parser/4.2.0",
+    "wanted": {
+      "dependentId": "/css-to-react-native/3.2.0",
+      "name": "postcss-value-parser",
+      "rawSpec": "^4.0.2"
+    }
+  },
+  "696 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-value-parser/4.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "697 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss-value-parser/4.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "698 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yaml/1.10.2",
+    "wanted": {
+      "dependentId": "/cosmiconfig/7.1.0",
+      "name": "yaml",
+      "rawSpec": "^1.10.0"
+    }
+  },
+  "699 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yaml/1.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "700 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yaml/1.10.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "701 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-environment-visitor/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/helper-environment-visitor",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "702 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-environment-visitor/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "703 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-environment-visitor/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "704 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pretty-format/26.6.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "pretty-format",
+      "rawSpec": "^26.6.2"
+    }
+  },
+  "705 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-format/26.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "706 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-format/26.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "707 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.2",
+      "name": "dom-accessibility-api",
+      "rawSpec": "^0.5.6"
+    }
+  },
+  "708 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "709 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/types/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/types",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "710 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "debug",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "711 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.16",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "712 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-function-name/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/helper-function-name",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "713 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-function-name/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "714 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/3.0.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "715 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/3.0.0",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "716 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-function-name/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "717 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-split-export-declaration/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/helper-split-export-declaration",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "718 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-split-export-declaration/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "719 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.5",
+    "wanted": {
+      "dependentId": "/aria-query/4.2.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.10.2"
+    }
+  },
+  "720 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-split-export-declaration/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "721 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-hoist-variables/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/helper-hoist-variables",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "722 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-hoist-variables/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "723 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-hoist-variables/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "724 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/inherits"
+  },
+  "725 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-refresh"
+  },
+  "726 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNREFUSED",
+      "code": "ECONNREFUSED",
+      "erroredSysCall": "connect"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/inherits"
+  },
+  "727 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/globals"
+  },
+  "728 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/lru-cache"
+  },
+  "729 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fgenerator"
+  },
+  "730 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fparser"
+  },
+  "731 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rxjs"
+  },
+  "732 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/graphql"
+  },
+  "733 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Feslint-plugin"
+  },
+  "734 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fruntime-corejs3"
+  },
+  "735 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-is"
+  },
+  "736 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Fparser"
+  },
+  "737 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/scheduler"
+  },
+  "738 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-plugin-react-hooks"
+  },
+  "739 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_STREAM_PREMATURE_CLOSE",
+      "code": "ERR_STREAM_PREMATURE_CLOSE"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@types%2Fjest"
+  },
+  "740 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-refresh"
+  },
+  "741 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/globals"
+  },
+  "742 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/lru-cache"
+  },
+  "743 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fgenerator"
+  },
+  "744 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fparser"
+  },
+  "745 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rxjs"
+  },
+  "746 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/graphql"
+  },
+  "747 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Feslint-plugin"
+  },
+  "748 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fruntime-corejs3"
+  },
+  "749 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-is"
+  },
+  "750 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Fparser"
+  },
+  "751 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/scheduler"
+  },
+  "752 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-plugin-react-hooks"
+  },
+  "753 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@types%2Fjest"
+  },
+  "754 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/react-refresh"
+  },
+  "755 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/globals"
+  },
+  "756 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fgenerator"
+  },
+  "757 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/lru-cache"
+  },
+  "758 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fparser"
+  },
+  "759 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/rxjs"
+  },
+  "760 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/graphql"
+  },
+  "761 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Feslint-plugin"
+  },
+  "762 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/react-is"
+  },
+  "763 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fruntime-corejs3"
+  },
+  "764 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@typescript-eslint%2Fparser"
+  },
+  "765 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/scheduler"
+  },
+  "766 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/eslint-plugin-react-hooks"
+  },
+  "767 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@types%2Fjest"
+  },
+  "768 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/inherits: request to https://registry.npmjs.org/inherits failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/inherits: request to https://registry.npmjs.org/inherits failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "769 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/inherits.json",
+  "770 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/css/3.0.0",
+      "name": "inherits",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "771 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "772 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "found_in_store"
+  },
+  "773 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/source-map"
+  },
+  "774 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/source-map"
+  },
+  "775 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/globals: request to https://registry.npmjs.org/globals failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/globals: request to https://registry.npmjs.org/globals failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "776 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/globals.json",
+  "777 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/globals/11.12.0",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "globals",
+      "rawSpec": "^11.1.0"
+    }
+  },
+  "778 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globals/11.12.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "779 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/lru-cache: request to https://registry.npmjs.org/lru-cache failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/lru-cache: request to https://registry.npmjs.org/lru-cache failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "780 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/lru-cache.json",
+  "781 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lru-cache/6.0.0",
+    "wanted": {
+      "dependentId": "/semver/7.5.3",
+      "name": "lru-cache",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "782 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lru-cache/6.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "783 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/@babel%2Fgenerator: request to https://registry.npmjs.org/@babel%2Fgenerator failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/@babel%2Fgenerator: request to https://registry.npmjs.org/@babel%2Fgenerator failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "784 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/@babel/generator.json",
+  "785 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/generator/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/generator",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "786 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/generator/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "787 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/rxjs: request to https://registry.npmjs.org/rxjs failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/rxjs: request to https://registry.npmjs.org/rxjs failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "788 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/rxjs.json",
+  "789 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rxjs/7.8.1",
+    "wanted": {
+      "dependentId": "/listr2/3.14.0",
+      "name": "rxjs",
+      "rawSpec": "^7.5.1"
+    }
+  },
+  "790 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rxjs/7.8.1",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "791 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/@babel%2Fparser: request to https://registry.npmjs.org/@babel%2Fparser failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/@babel%2Fparser: request to https://registry.npmjs.org/@babel%2Fparser failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "792 debug pnpm": "Using cached meta from /home/theia/.cache/pnpm/metadata/registry.npmjs.org/@babel/parser.json",
+  "793 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/parser/7.22.5",
+    "wanted": {
+      "dependentId": "/@babel/traverse/7.22.5",
+      "name": "@babel/parser",
+      "rawSpec": "^7.22.5"
+    }
+  },
+  "794 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/parser/7.22.5",
+    "requester": "/home/workspace/reactjs/coding-practices/travelGuide",
+    "status": "resolved"
+  },
+  "795 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/source-map-resolve"
+  },
+  "796 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/indent-string"
+  },
+  "797 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/strip-indent"
+  },
+  "798 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 2,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/msw/0.35.0",
+        "name": "msw",
+        "version": "0.35.0"
+      }
+    ],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/graphql: request to https://registry.npmjs.org/graphql failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "pnpm: GET https://registry.npmjs.org/graphql: request to https://registry.npmjs.org/graphql failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}

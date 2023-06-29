@@ -1,0 +1,30 @@
+.travel-container {
+  min-height: 100vh;
+  background-color: #eef4f7;
+  background-size: cover;
+  padding: 20px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #334155;
+  text-align: center;
+}
+.separator {
+  background-color: #52bbf8;
+  width: 200px;
+  text-align: center;
+}
+.places-list-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0px;
+}
+.position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
